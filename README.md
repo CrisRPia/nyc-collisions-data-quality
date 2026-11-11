@@ -17,10 +17,11 @@ No separate data preparation or CLI run is required. Widgets need a live kernel;
 the notebook also saves static tables and figures for readers without one.
 An executed HTML copy is available as `data_quality_project.html`; open the
 notebook in JupyterLab to use the live filters and record comparison controls.
-In the exploration section, **Usar datos limpios** switches the table and charts
-between original and cleaned data while keeping filters. Month, borough and
-vehicle charts use fixed scales; the map follows the same selection. Review
-flags select the same source rows in both versions.
+In the exploration section, each chart, the map and the table have their own
+**Usar datos limpios** checkbox. They switch independently between original and
+cleaned data while sharing the borough, month, review-flag and search filters.
+Month, borough and vehicle charts use fixed scales. Review flags select the same
+source rows in both versions.
 
 Notebook settings:
 
