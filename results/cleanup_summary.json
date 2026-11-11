@@ -1,0 +1,40 @@
+{
+  "generated_at_utc": "2026-11-11T20:23:24.318041+00:00",
+  "raw_sha256": "47e63e4e342300f2942998d29add89257e3ad86d502ce2cadac402411bc3a5b1",
+  "cleaned_json_sha256": "8801e431d3c7da196dcaf568e3b1e7cbf372c0e2ab7e92f64af52351fcaa35b8",
+  "records_before": 85559,
+  "records_after": 85559,
+  "records_deleted": 0,
+  "output_fields": 31,
+  "operations": {
+    "redundant_location_objects_removed": 84833,
+    "missing_fields_made_explicit_null": 693447,
+    "blank_strings_to_null": 0,
+    "text_values_trimmed": 0,
+    "count_values_typed": 684472,
+    "coordinate_values_typed": 169666,
+    "date_formats_normalized": 85559,
+    "time_formats_normalized": 0,
+    "borough_derived": 6573,
+    "vehicle_case_normalized": 571
+  },
+  "borough_missing_before": 7100,
+  "borough_missing_after": 527,
+  "coordinate_pairs_missing_before": 726,
+  "coordinate_pairs_missing_after": 726,
+  "duplicate_groups_before": 27,
+  "duplicate_groups_after_normalization": 27,
+  "duplicate_candidate_records_retained": 54,
+  "review_flags": {
+    "person_role_total_difference_injured": 2858,
+    "coordinates_outside_nyc": 1915,
+    "coordinates_unknown": 726,
+    "borough_coordinate_conflict": 96,
+    "person_role_total_difference_killed": 33,
+    "borough_unknown": 527,
+    "possible_duplicate_event": 54
+  },
+  "reference_sha256": "be770a4463b68c2bacc0b0443380fe77936be0fb9c1835b5e9de53ff21effc34",
+  "spatial_rule": "Conditional on correct coordinates; current land-only polygons; approximate boundary band. Agreement is not ground-truth crash-location accuracy. Eligible missing boroughs were derived and labeled; supplied boroughs were preserved.",
+  "audit_scope": "Substantive borough/coordinate/category changes are logged by ID. Type conversion, null representation, date/time formatting and redundant-column removal are counted above. Invalid domain values are preserved and reported in domain_alerts.csv with their source row and rule."
+}

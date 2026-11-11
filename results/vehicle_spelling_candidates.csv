@@ -1,0 +1,253 @@
+﻿normalized_key,proposed_spelling,observed_spelling,cells,is_proposed_spelling
+a,A,A,1,True
+a,A,a,1,False
+amazon van,AMAZON VAN,AMAZON VAN,1,True
+amazon van,AMAZON VAN,Amazon Van,1,False
+amb,AMB,AMB,5,True
+amb,AMB,Amb,3,False
+amb,AMB,amb,2,False
+ambu,AMBU,AMBU,8,True
+ambu,AMBU,ambu,2,False
+ambulance,Ambulance,AMBULANCE,135,False
+ambulance,Ambulance,Ambulance,665,True
+ambulance,Ambulance,ambulance,10,False
+ambulette,AMBULETTE,AMBULETTE,2,True
+ambulette,AMBULETTE,Ambulette,1,False
+ambulette,AMBULETTE,ambulette,1,False
+bobcat,BOBCAT,BOBCAT,2,True
+bobcat,BOBCAT,Bobcat,2,False
+box truck,Box Truck,BOX TRUCK,15,False
+box truck,Box Truck,Box Truck,3224,True
+box truck,Box Truck,Box truck,10,False
+box truck,Box Truck,box truck,1,False
+bus,Bus,Bus,3361,True
+bus,Bus,bus,2,False
+cargo van,CARGO VAN,CARGO VAN,2,True
+cargo van,CARGO VAN,Cargo van,1,False
+cement truck,CEMENT TRUCK,CEMENT TRUCK,1,True
+cement truck,CEMENT TRUCK,Cement truck,1,False
+com,COM,COM,4,True
+com,COM,Com,1,False
+commercial,COMMERCIAL,COMMERCIAL,15,True
+commercial,COMMERCIAL,Commercial,9,False
+commercial,COMMERCIAL,commercial,1,False
+commercial van,COMMERCIAL VAN,COMMERCIAL VAN,2,True
+commercial van,COMMERCIAL VAN,Commercial Van,2,False
+commercial van,COMMERCIAL VAN,Commercial van,1,False
+courier,COURIER,COURIER,3,True
+courier,COURIER,Courier,1,False
+delivery t,Delivery t,Delivery t,1,True
+delivery t,Delivery t,delivery t,1,False
+delivery truck,DELIVERY TRUCK,DELIVERY TRUCK,4,True
+delivery truck,DELIVERY TRUCK,Delivery truck,4,False
+delivery van,DELIVERY VAN,DELIVERY VAN,1,True
+delivery van,DELIVERY VAN,Delivery Van,1,False
+dirt bike,Dirt Bike,DIRT BIKE,1,False
+dirt bike,Dirt Bike,Dirt Bike,43,True
+dirt bike,Dirt Bike,Dirt bike,1,False
+dot truck,DOT TRUCK,DOT TRUCK,2,True
+dot truck,DOT TRUCK,DOT truck,2,False
+dump,Dump,DUMP,1,False
+dump,Dump,Dump,523,True
+dump truck,DUMP TRUCK,DUMP TRUCK,13,True
+dump truck,DUMP TRUCK,Dump Truck,4,False
+dump truck,DUMP TRUCK,Dump truck,2,False
+e bike,E BIKE,E BIKE,1,True
+e bike,E BIKE,E bike,1,False
+e scooter,E SCOOTER,E SCOOTER,2,True
+e scooter,E SCOOTER,E scooter,1,False
+e-bike,E-Bike,E-BIKE,1,False
+e-bike,E-Bike,E-Bike,1428,True
+e-scooter,E-Scooter,E-SCOOTER,7,False
+e-scooter,E-Scooter,E-Scooter,502,True
+e-scooter,E-Scooter,E-scooter,1,False
+e-scooter,E-Scooter,e-scooter,1,False
+ebike,Ebike,EBIKE,1,False
+ebike,Ebike,Ebike,2,True
+electric m,ELECTRIC M,ELECTRIC M,1,True
+electric m,ELECTRIC M,Electric m,1,False
+electric moped,ELECTRIC MOPED,ELECTRIC MOPED,1,True
+electric moped,ELECTRIC MOPED,Electric moped,1,False
+electric scooter,ELECTRIC SCOOTER,ELECTRIC SCOOTER,8,True
+electric scooter,ELECTRIC SCOOTER,Electric Scooter,2,False
+electric scooter,ELECTRIC SCOOTER,Electric scooter,3,False
+fd truck,FD TRUCK,FD TRUCK,1,True
+fd truck,FD TRUCK,FD Truck,1,False
+fdny,FDNY,FDNY,4,True
+fdny,FDNY,fdny,2,False
+fdny ambulance,FDNY AMBULANCE,FDNY AMBULANCE,13,True
+fdny ambulance,FDNY AMBULANCE,FDNY Ambulance,3,False
+fdny ambulance,FDNY AMBULANCE,FDNY ambulance,1,False
+fdny ambulance,FDNY AMBULANCE,fdny ambulance,2,False
+fdny fire truck,FDNY FIRE TRUCK,FDNY FIRE TRUCK,12,True
+fdny fire truck,FDNY FIRE TRUCK,FDNY Fire Truck,4,False
+fdny fire truck,FDNY FIRE TRUCK,FDNY Fire truck,1,False
+fdny fire truck,FDNY FIRE TRUCK,Fdny fire truck,1,False
+fdny firetruck,FDNY FIRETRUCK,FDNY FIRETRUCK,3,True
+fdny firetruck,FDNY FIRETRUCK,FDNY Firetruck,1,False
+fdny truck,FDNY TRUCK,FDNY TRUCK,9,True
+fdny truck,FDNY TRUCK,FDNY Truck,2,False
+fdny truck,FDNY TRUCK,FDNY truck,1,False
+fdny truck,FDNY TRUCK,Fdny truck,1,False
+fire apparatus,FIRE APPARATUS,FIRE APPARATUS,1,True
+fire apparatus,FIRE APPARATUS,Fire Apparatus,1,False
+fire engine,FIRE ENGINE,FIRE ENGINE,1,True
+fire engine,FIRE ENGINE,Fire Engine,1,False
+fire engine,FIRE ENGINE,Fire engine,1,False
+fire truck,FIRE TRUCK,FIRE TRUCK,53,True
+fire truck,FIRE TRUCK,Fire Truck,11,False
+fire truck,FIRE TRUCK,Fire truck,12,False
+fire truck,FIRE TRUCK,fire truck,5,False
+firetruck,FIRETRUCK,FIRETRUCK,24,True
+firetruck,FIRETRUCK,Firetruck,5,False
+firetruck,FIRETRUCK,firetruck,1,False
+fork lift,FORK LIFT,FORK LIFT,2,True
+fork lift,FORK LIFT,Fork lift,1,False
+forklift,Forklift,FORKLIFT,11,False
+forklift,Forklift,Forklift,12,True
+forklift,Forklift,forklift,3,False
+garbage tr,GARBAGE TR,GARBAGE TR,3,True
+garbage tr,GARBAGE TR,Garbage Tr,1,False
+garbage tr,GARBAGE TR,Garbage tr,1,False
+garbage truck,GARBAGE TRUCK,GARBAGE TRUCK,6,True
+garbage truck,GARBAGE TRUCK,Garbage truck,2,False
+garbage truck,GARBAGE TRUCK,garbage truck,2,False
+golf cart,GOLF CART,GOLF CART,4,True
+golf cart,GOLF CART,Golf cart,1,False
+ice cream truck,Ice cream truck,Ice Cream Truck,1,False
+ice cream truck,Ice cream truck,Ice cream truck,2,True
+limo,LIMO,LIMO,83,True
+limo,LIMO,Limo,1,False
+minivan,Minivan,MINIVAN,1,False
+minivan,Minivan,Minivan,3,True
+moped,Moped,MOPED,34,False
+moped,Moped,Moped,1850,True
+moped,Moped,moped,4,False
+motor scooter,MOTOR SCOOTER,MOTOR SCOOTER,1,True
+motor scooter,MOTOR SCOOTER,Motor scooter,1,False
+moving truck,MOVING TRUCK,MOVING TRUCK,1,True
+moving truck,MOVING TRUCK,Moving truck,1,False
+mta bus,MTA BUS,MTA BUS,7,True
+mta bus,MTA BUS,MTA bus,1,False
+nys ambulance,NYS AMBULANCE,NYS AMBULANCE,4,True
+nys ambulance,NYS AMBULANCE,NYS Ambulance,1,False
+pas,PAS,PAS,4,True
+pas,PAS,Pas,1,False
+pas,PAS,pas,3,False
+passenger,PASSENGER,PASSENGER,4,True
+passenger,PASSENGER,Passenger,1,False
+pedicab,Pedicab,PEDICAB,1,False
+pedicab,Pedicab,Pedicab,35,True
+pedicab,Pedicab,pedicab,1,False
+pick up,PICK UP,PICK UP,8,True
+pick up,PICK UP,Pick Up,1,False
+pick up,PICK UP,Pick up,3,False
+pick up tr,PICK UP TR,PICK UP TR,2,True
+pick up tr,PICK UP TR,Pick up tr,2,False
+pick up truck,PICK UP TRUCK,PICK UP TRUCK,7,True
+pick up truck,PICK UP TRUCK,Pick Up Truck,1,False
+pick up truck,PICK UP TRUCK,Pick up truck,2,False
+pick-up truck,Pick-up Truck,PICK-UP TRUCK,1,False
+pick-up truck,Pick-up Truck,Pick-up Truck,4055,True
+pickup,PICKUP,PICKUP,3,True
+pickup,PICKUP,Pickup,2,False
+pickup truck,PICKUP TRUCK,PICKUP TRUCK,2,True
+pickup truck,PICKUP TRUCK,Pickup Truck,1,False
+pickup truck,PICKUP TRUCK,Pickup truck,2,False
+pk,PK,PK,410,True
+pk,PK,pk,1,False
+power shov,POWER SHOV,POWER SHOV,3,True
+power shov,POWER SHOV,Power Shov,1,False
+road sweep,ROAD SWEEP,ROAD SWEEP,1,True
+road sweep,ROAD SWEEP,road sweep,1,False
+road sweeper,Road Sweeper,ROAD SWEEPER,1,False
+road sweeper,Road Sweeper,Road Sweeper,2,True
+rv,RV,RV,1,True
+rv,RV,rv,1,False
+sanitation,SANITATION,SANITATION,6,True
+sanitation,SANITATION,Sanitation,2,False
+sanitation,SANITATION,sanitation,1,False
+sanitation truck,SANITATION TRUCK,SANITATION TRUCK,6,True
+sanitation truck,SANITATION TRUCK,Sanitation Truck,1,False
+sanitation truck,SANITATION TRUCK,Sanitation truck,1,False
+school bus,School Bus,SCHOOL BUS,13,False
+school bus,School Bus,School Bus,19,True
+school bus,School Bus,School bus,8,False
+school bus,School Bus,school bus,1,False
+scooter,SCOOTER,SCOOTER,8,True
+scooter,SCOOTER,Scooter,2,False
+scooter,SCOOTER,scooter,3,False
+sedan,Sedan,SEDAN,1,False
+sedan,Sedan,Sedan,64941,True
+skateboard,SKATEBOARD,SKATEBOARD,5,True
+skateboard,SKATEBOARD,Skateboard,1,False
+sprinter,SPRINTER,SPRINTER,2,True
+sprinter,SPRINTER,Sprinter,1,False
+sprinter v,SPRINTER V,SPRINTER V,1,True
+sprinter v,SPRINTER V,Sprinter V,1,False
+sprinter van,SPRINTER VAN,SPRINTER VAN,4,True
+sprinter van,SPRINTER VAN,Sprinter Van,1,False
+sprinter van,SPRINTER VAN,sprinter van,1,False
+standing scooter,Standing Scooter,Standing Scooter,1018,True
+standing scooter,Standing Scooter,Standing scooter,2,False
+street sweeper,STREET SWEEPER,STREET SWEEPER,2,True
+street sweeper,STREET SWEEPER,Street sweeper,1,False
+subn,subn,Subn,1,False
+subn,subn,subn,25,True
+suburban,Suburban,SUBURBAN,1,False
+suburban,Suburban,Suburban,2,True
+suv,SUV,SUV,2,True
+suv,SUV,suv,1,False
+sweeper,SWEEPER,SWEEPER,2,True
+sweeper,SWEEPER,sweeper,2,False
+taxi,Taxi,Taxi,3896,True
+taxi,Taxi,taxi,2,False
+tow truck,TOW TRUCK,TOW TRUCK,21,True
+tow truck,TOW TRUCK,TOW Truck,1,False
+tow truck,TOW TRUCK,Tow Truck,7,False
+tow truck,TOW TRUCK,Tow truck,2,False
+trac,TRAC,TRAC,1,True
+trac,TRAC,trac,1,False
+tractor,TRACTOR,TRACTOR,4,True
+tractor,TRACTOR,Tractor,4,False
+tractor tr,Tractor Tr,Tractor Tr,1,True
+tractor tr,Tractor Tr,Tractor tr,1,False
+tractor tr,Tractor Tr,tractor tr,1,False
+tractor trailer,Tractor Trailer,Tractor Trailer,1,True
+tractor trailer,Tractor Trailer,Tractor trailer,1,False
+trailer,TRAILER,TRAILER,37,True
+trailer,TRAILER,Trailer,24,False
+trailer,TRAILER,trailer,1,False
+truck,TRUCK,TRUCK,20,True
+truck,TRUCK,Truck,15,False
+truck,TRUCK,truck,2,False
+unk,UNK,UNK,35,True
+unk,UNK,Unk,14,False
+unk,UNK,unk,5,False
+unknown,UNKNOWN,UNKNOWN,22,True
+unknown,UNKNOWN,Unknown,20,False
+unknown,UNKNOWN,unknown,6,False
+unknown ve,UNKNOWN VE,UNKNOWN VE,1,True
+unknown ve,UNKNOWN VE,Unknown ve,1,False
+unkown,UNKOWN,UNKOWN,1,True
+unkown,UNKOWN,Unkown,1,False
+ups truck,UPS TRUCK,UPS TRUCK,1,True
+ups truck,UPS TRUCK,UPS Truck,1,False
+us postal,US POSTAL,US POSTAL,1,True
+us postal,US POSTAL,US Postal,1,False
+usps truck,USPS TRUCK,USPS TRUCK,4,True
+usps truck,USPS TRUCK,USPS truck,2,False
+usps truck,USPS TRUCK,Usps truck,1,False
+usps van,USPS VAN,USPS VAN,1,True
+usps van,USPS VAN,USPS Van,1,False
+usps van,USPS VAN,USPS van,1,False
+utility,UTILITY,UTILITY,5,True
+utility,UTILITY,Utility,5,False
+van,Van,Van,1035,True
+van,Van,van,9,False
+work van,Work Van,Work Van,2,True
+work van,Work Van,Work van,1,False
+yellow bus,Yellow bus,YELLOW BUS,1,False
+yellow bus,Yellow bus,Yellow Bus,1,False
+yellow bus,Yellow bus,Yellow bus,3,True
+yellow bus,Yellow bus,yellow bus,1,False

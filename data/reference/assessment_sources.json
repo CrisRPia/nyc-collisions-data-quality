@@ -1,0 +1,20 @@
+[
+  {
+    "file": "data/reference/nyc_borough_boundaries.geojson",
+    "url": "https://data.cityofnewyork.us/resource/gthc-hcne.geojson?$limit=5",
+    "observed_at_utc": "2026-11-11T17:27:10.576994+00:00",
+    "sha256": "be770a4463b68c2bacc0b0443380fe77936be0fb9c1835b5e9de53ff21effc34"
+  },
+  {
+    "file": "data/reference/nyc_collisions_metadata.json",
+    "url": "https://data.cityofnewyork.us/api/views/h9gi-nx95.json",
+    "observed_at_utc": "2026-11-11T17:29:23.621300+00:00",
+    "sha256": "e38c020cfce02e3cedc372e580525d970dcf5db6bb119936a09d8105c5427a3c"
+  },
+  {
+    "file": "data/raw/nyc_collisions_2025.json",
+    "url": "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$where=crash_date%20%3E%3D%20%272025-01-01T00%3A00%3A00%27%20AND%20crash_date%20%3C%20%272026-01-01T00%3A00%3A00%27&$limit=100000",
+    "observed_at_utc": "2026-11-11T17:26:43.850511+00:00",
+    "sha256": "47e63e4e342300f2942998d29add89257e3ad86d502ce2cadac402411bc3a5b1"
+  }
+]

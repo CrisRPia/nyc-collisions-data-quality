@@ -1,0 +1,115 @@
+### Propuesta de monitoreo continuo
+
+**NYC Motor Vehicle Collisions — datos de 2025**
+
+Objetivo: mantener datos utilizables para el análisis por distrito y categoría
+de vehículo. La propuesta sigue el capítulo 13 de DMBOK2, páginas impresas 478–486.
+
+#### 1. Responsables
+
+- **Ingesta:** adquirir y archivar las fuentes, ejecutar el proceso y retener
+  los registros junto con sus alertas de calidad.
+- **Analista:** revisar alertas, documentar hallazgos y mantener el cuadro de calidad.
+- **Referente del dominio y geográfico:** resolver dudas sobre ubicaciones,
+  categorías, posibles duplicados y relaciones entre personas y roles.
+- **Responsable del proyecto:** aprobar reglas, umbrales y publicación de resultados.
+
+#### 2. Frecuencia y conservación de evidencia
+
+Ejecutar el proceso ante cada nueva copia o cambio de código o referencia.
+Para una alimentación continua, se propone una adquisición diaria según la
+frecuencia anunciada por el portal. La programación y el envío de alertas
+quedan por implementar.
+
+En cada ejecución:
+
+1. Guardar los bytes originales, URL, fecha de adquisición, actualización de la
+   fuente, esquema y hashes.
+2. Versionar límites geográficos, mapa de etiquetas y código. Revisar sus cambios
+   antes de aprobar un nuevo manifiesto.
+3. Ejecutar perfilado, limpieza y cuadro de calidad con un identificador de ejecución.
+4. Archivar fuentes, salidas, bitácora, hallazgos y decisión de publicación durante
+   la vida del proyecto. Conservar ejecuciones separadas para analizar tendencias.
+
+El notebook guarda sus salidas en `runs/`. Al reutilizar una carpeta, reemplaza
+sus salidas; `REFRESH_SOURCE = True` crea otra carpeta fechada.
+
+#### 3. Reglas del dominio y alertas
+
+- Fuentes verificadas contra el manifiesto y los esquemas.
+- Conservación de registros, orden e IDs; IDs no vacíos y únicos.
+- ID, fecha, hora y totales de personas presentes; fechas válidas dentro de 2025
+  y horas locales entre 00:00:00 y 23:59:59.
+- Distrito entre BRONX, BROOKLYN, MANHATTAN, QUEENS y STATEN ISLAND.
+- Código postal informado como texto de cinco dígitos.
+- Conteos enteros, finitos y no negativos; cada subtotal por rol menor o igual
+  al total de personas. Los valores inválidos se conservan con su alerta.
+- Coordenadas numéricas, finitas y completas dentro del rectángulo de los límites
+  oficiales de NYC más un margen aproximado de 5 km. `GEOGRAPHIC_MARGIN_KM`, en
+  `analysis/domain.py`, configura ese margen. La ejecución guarda los límites
+  numéricos aplicados en `results/domain_validation.json`.
+- Distritos y totales suministrados conservados; derivaciones identificadas
+  y cambios sustantivos rastreables por ID.
+- `location` eliminado únicamente tras comprobar su redundancia.
+- Mapa de etiquetas determinista; categorías nuevas y abreviaturas ambiguas
+  remitidas a revisión.
+
+Cada infracción produce una alerta con fila de origen, ID, regla, valor observado
+y valor esperado. `results/domain_alerts.csv` registra las alertas antes y después;
+`quality_flags` permite filtrar las filas de la salida limpia. Se conservan todos
+los registros y los valores que incumplen el dominio, incluidos los pares `(0,0)`.
+
+Una entrada ilegible, un esquema incompatible o un hash incorrecto detienen la
+ejecución para revisar la adquisición. Las infracciones de valores quedan en el
+conjunto y pasan a revisión del analista.
+
+#### 4. Alertas y umbrales iniciales
+
+Las infracciones del dominio generan alertas desde el primer caso. Para detectar
+cambios de tendencia, comparar períodos equivalentes con la misma versión de reglas e informar
+conteos, denominadores y tasas. Las referencias corresponden a la copia original.
+
+| Indicador | Alerta propuesta | Referencia |
+|---|---|---|
+| Infracciones del dominio | Cada caso, incluidos puntos fuera de NYC más el margen | Consultar `domain_alerts.csv` |
+| Distritos faltantes después de limpiar | Aumento mayor a 0,5 puntos porcentuales o tasa superior al 1 % | 527 / 85.559 (0,616 %) |
+| Cobertura de coordenadas utilizables (C05) | Caída mayor a 0,5 puntos porcentuales | 82.918 / 85.559 |
+| Etiquetas de vehículos (S03) | Grupo nuevo o valor distinto de la forma predominante | Revisar el mapa antes de actualizarlo |
+| Conflicto entre distrito suministrado y referencia (S05) | Aumento mayor a 0,1 puntos porcentuales o nuevo agrupamiento geográfico | 96 / 75.393; excluir distritos derivados |
+| Posibles duplicados (U02) | Cada grupo nuevo | 27 grupos, 54 registros y 27 coincidencias excedentes |
+| Diferencias entre personas y roles (R01) | IDs nuevos o cambios del patrón mensual | 2.858 casos de lesionados; 33 de fallecidos |
+| Antigüedad de actualización de la fuente | Más de 48 horas al adquirirla | Objetivo operativo a acordar |
+
+El analista investiga las alertas y deriva los casos semánticos al referente.
+Los posibles duplicados y las diferencias de roles se conservan hasta su resolución.
+
+#### 5. Revisión y resolución
+
+Plazos propuestos: primera revisión de fallos técnicos el mismo día hábil y
+revisión de alertas analíticas en dos días hábiles. Revisar pendientes semanalmente
+y reglas, falsos positivos y umbrales mensualmente. Elevar casos vencidos o
+reiterados al responsable del proyecto.
+
+Registrar ID de ejecución, IDs afectados, regla, valor observado, impacto,
+evidencia, hipótesis, responsable, fechas y decisión. Documentar cada resolución
+como corrección, derivación aprobada, limitación aceptada o caso pendiente.
+
+#### 6. Mediciones pendientes
+
+Para evaluar exactitud, acordar una muestra y contrastarla con informes
+policiales o una referencia independiente de hechos y ubicaciones.
+
+Para estimar la demora de publicación, registrar la primera observación de
+cada ID en adquisiciones sucesivas y conservar sus modificaciones. Esa fecha
+es una cota superior de la primera publicación real. Acordar una demora aceptable
+con el usuario de los datos.
+
+#### 7. Cuadro de calidad y publicación
+
+Consultar `results/quality_scorecard_before_after.csv` y sus versiones JSON y HTML.
+Comparar reglas por separado y documentar cambios de denominador. Leer juntas
+la presencia de coordenadas (C03), su pertenencia al dominio NYC (V08) y la
+cobertura utilizable (C05). La regla S02 deja de aplicar al eliminar `location`.
+Las excepciones de distintas reglas pueden superponerse.
+
+Registrar la decisión de publicación, las limitaciones pendientes y la próxima revisión.
