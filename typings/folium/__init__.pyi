@@ -1,0 +1,26 @@
+"""Typed subset of Folium's constructors and rendering API used in this project."""
+from collections.abc import Callable, Mapping, Sequence
+from typing import Protocol
+
+class Renderable(Protocol):
+    def render(self) -> str: ...
+
+class Map:
+    def __init__(self, *, tiles: str | None = ..., prefer_canvas: bool = ..., control_scale: bool = ...) -> None: ...
+    def fit_bounds(self, bounds: Sequence[Sequence[float]]) -> None: ...
+    def get_root(self) -> Renderable: ...
+
+class GeoJsonTooltip:
+    def __init__(self, *, fields: Sequence[str], aliases: Sequence[str], sticky: bool = ...) -> None: ...
+
+class CircleMarker:
+    options: dict[str, object]
+    def __init__(self, *, radius: float = ..., stroke: bool = ..., fill: bool = ...,
+                 fill_color: str = ..., fill_opacity: float = ...) -> None: ...
+
+class GeoJson:
+    def __init__(self, data: str, *, name: str = ...,
+                 style_function: Callable[[Mapping[str, object]], Mapping[str, object]] | None = ...,
+                 highlight_function: Callable[[Mapping[str, object]], Mapping[str, object]] | None = ...,
+                 tooltip: GeoJsonTooltip | None = ..., marker: CircleMarker | None = ...) -> None: ...
+    def add_to(self, parent: Map) -> GeoJson: ...

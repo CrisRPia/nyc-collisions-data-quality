@@ -21,7 +21,8 @@ In the exploration section, each chart, the map and the table have their own
 **Usar datos limpios** checkbox. They switch independently between original and
 cleaned data while sharing the borough, month, review-flag and search filters.
 Month, borough and vehicle charts use fixed scales. Review flags select the same
-source rows in both versions.
+source rows in both versions. The map supports zoom, pan and borough hover labels
+using the official polygons; its Leaflet assets load from CDN.
 
 Notebook settings:
 
@@ -83,7 +84,7 @@ uv run --locked jupyter nbconvert --to html --HTMLExporter.language_code=es data
 ```
 
 Development dependencies include pandas/matplotlib stubs. The small `typings/`
-directory describes the ipywidgets and IPython display APIs used by the notebook;
+directory describes the ipywidgets, IPython display and Folium APIs used by the notebook;
 it does not change runtime behavior. The pipeline and notebook are both checked
 by basedpyright.
 
